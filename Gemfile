@@ -1,26 +1,27 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.6'
 gem 'pg'
+gem 'rails', '4.2.3'
+gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
-gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'turbolinks'
 
+# Use ActiveModel has_secure_password
+gem 'bcrypt', '~> 3.1.7'
+
 group :development, :test do
-  gem 'pry-byebug'
-  gem 'byebug'
-  gem "rspec", "~> 3.0"
   gem "rspec-given"
-  gem "guard-rspec"
-  gem "rspec-rails"
-  gem "quiet_assets"
+  gem 'byebug'
+  gem 'spring'
   gem 'shoulda-matchers'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
   gem 'capybara'
-  gem 'rspec-activemodel-mocks'
+  gem 'guard-rspec'
+  gem 'rb-fsevent'
 end
 
 group :development do
